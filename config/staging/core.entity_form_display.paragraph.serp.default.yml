@@ -1,0 +1,23 @@
+uuid: b2a72c99-6107-4b18-a80e-b3a64e147de1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.serp.field_serp_eintrag
+    - paragraphs.paragraphs_type.serp
+id: paragraph.serp.default
+targetEntityType: paragraph
+bundle: serp
+mode: default
+content:
+  field_serp_eintrag:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true

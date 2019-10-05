@@ -1,0 +1,16 @@
+uuid: 0decc1f4-a82c-4529-b8c2-5fbaa6a9231e
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - user
+  module:
+    - pathauto
+_core:
+  default_config_hash: x_ok_ZsfA4Xk4B_hVW3O4-3PcNoK57nXLz_Dlletidg
+id: pathauto_update_alias_user
+label: 'URL-Alias aktualisieren'
+type: user
+plugin: pathauto_update_alias
+configuration: {  }

@@ -1,0 +1,11 @@
+uuid: d15d4485-0cd6-43ce-994f-8ff9b40d031c
+langcode: de
+status: true
+dependencies:
+  config:
+    - block_content.type.normaler_block
+id: block_content.normaler_block
+target_entity_type_id: block_content
+target_bundle: normaler_block
+default_langcode: site_default
+language_alterable: false

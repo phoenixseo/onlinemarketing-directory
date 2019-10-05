@@ -1,0 +1,20 @@
+uuid: 462cf5fa-afa2-4a49-9010-1dc0be5207eb
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seven
+id: pfadnavigation
+theme: seven
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Pfadnavigation
+  provider: system
+  label_display: '0'
+visibility: {  }

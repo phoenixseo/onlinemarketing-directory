@@ -1,0 +1,21 @@
+uuid: 7764dd4b-243c-4cdb-980c-0981c36cb5cb
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_handelsregister
+field_name: field_handelsregister
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

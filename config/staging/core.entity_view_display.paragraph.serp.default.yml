@@ -1,0 +1,21 @@
+uuid: efa35e7c-baab-4703-b546-0ab49969752b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.serp.field_serp_eintrag
+    - paragraphs.paragraphs_type.serp
+id: paragraph.serp.default
+targetEntityType: paragraph
+bundle: serp
+mode: default
+content:
+  field_serp_eintrag:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  search_api_excerpt: true

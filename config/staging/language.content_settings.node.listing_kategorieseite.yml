@@ -1,0 +1,11 @@
+uuid: 03255b68-64b2-4d8b-b2db-7116b5ea0a14
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.listing_kategorieseite
+id: node.listing_kategorieseite
+target_entity_type_id: node
+target_bundle: listing_kategorieseite
+default_langcode: site_default
+language_alterable: false

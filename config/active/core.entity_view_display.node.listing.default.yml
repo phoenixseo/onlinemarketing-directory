@@ -1,0 +1,635 @@
+uuid: 0beea924-3855-4913-9615-92d7d69f6a31
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.listing.body
+    - field.field.node.listing.field_adresse
+    - field.field.node.listing.field_alumni
+    - field.field.node.listing.field_e_mail
+    - field.field.node.listing.field_foundingdate
+    - field.field.node.listing.field_geschaeftsfuehrer
+    - field.field.node.listing.field_handelsregister
+    - field.field.node.listing.field_legalname
+    - field.field.node.listing.field_leistungen
+    - field.field.node.listing.field_logo
+    - field.field.node.listing.field_northdata
+    - field.field.node.listing.field_numberofemployees
+    - field.field.node.listing.field_parentorganization
+    - field.field.node.listing.field_registergericht
+    - field.field.node.listing.field_seitenabschnitt
+    - field.field.node.listing.field_serp
+    - field.field.node.listing.field_taxid
+    - field.field.node.listing.field_telefon
+    - field.field.node.listing.field_web_adresse
+    - node.type.listing
+  module:
+    - address
+    - bootstrap_layouts
+    - datetime
+    - entity_reference_revisions
+    - layout_builder
+    - link
+    - telephone
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: bs_2col_bricked
+        layout_settings:
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            top:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+            top_left:
+              wrapper: div
+              classes:
+                col-sm-6: col-sm-6
+              add_region_classes: 1
+              attributes: ''
+            top_right:
+              wrapper: div
+              classes:
+                col-sm-6: col-sm-6
+              add_region_classes: 1
+              attributes: ''
+            middle:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+            bottom_left:
+              wrapper: div
+              classes:
+                col-sm-6: col-sm-6
+              add_region_classes: 1
+              attributes: ''
+            bottom_right:
+              wrapper: div
+              classes:
+                col-sm-6: col-sm-6
+              add_region_classes: 1
+              attributes: ''
+            bottom:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          7b2cd3cf-efaf-44b3-96cf-68099c06500e:
+            uuid: 7b2cd3cf-efaf-44b3-96cf-68099c06500e
+            region: top_right
+            configuration:
+              id: 'field_block:node:listing:field_numberofemployees'
+              label: numberOfEmployees
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: number_integer
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -3
+          5cf99187-9b6d-43aa-9ed2-7c169de984c7:
+            uuid: 5cf99187-9b6d-43aa-9ed2-7c169de984c7
+            region: top_right
+            configuration:
+              id: 'field_block:node:listing:field_e_mail'
+              label: E-Mail
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: basic_string
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -7
+          b9a68db9-664e-40ab-aede-7299ff0923c8:
+            uuid: b9a68db9-664e-40ab-aede-7299ff0923c8
+            region: top_right
+            configuration:
+              id: 'field_block:node:listing:field_handelsregister'
+              label: Handelsregister
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -4
+          504a9a87-ecf6-48c5-a731-2ad3d225518c:
+            uuid: 504a9a87-ecf6-48c5-a731-2ad3d225518c
+            region: top
+            configuration:
+              id: 'field_block:node:listing:field_legalname'
+              label: legalName
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          94b181ae-c34e-46e8-89f4-854c30d13b7b:
+            uuid: 94b181ae-c34e-46e8-89f4-854c30d13b7b
+            region: top_right
+            configuration:
+              id: 'field_block:node:listing:field_telefon'
+              label: Telefon
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: telephone_link
+                settings:
+                  title: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -6
+          e380494f-e55c-4e5f-8eec-feff78585c88:
+            uuid: e380494f-e55c-4e5f-8eec-feff78585c88
+            region: top_right
+            configuration:
+              id: 'field_block:node:listing:field_geschaeftsfuehrer'
+              label: Geschäftsführer
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -9
+          400139e4-62a3-4e81-a441-26bbb3e69e3d:
+            uuid: 400139e4-62a3-4e81-a441-26bbb3e69e3d
+            region: top_right
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:listing:field_taxid'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: -2
+          69521d02-ab4f-4e19-a666-a57f580419ec:
+            uuid: 69521d02-ab4f-4e19-a666-a57f580419ec
+            region: middle
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:listing:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: -10
+          e7c0a530-4ab8-48e7-9a92-1e34e69abb2f:
+            uuid: e7c0a530-4ab8-48e7-9a92-1e34e69abb2f
+            region: top_right
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:listing:field_registergericht'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: -5
+          6bff0422-db9a-40a9-b9d9-25b34156fb8d:
+            uuid: 6bff0422-db9a-40a9-b9d9-25b34156fb8d
+            region: top_left
+            configuration:
+              id: 'field_block:node:listing:field_web_adresse'
+              label: 'Web Adresse'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: link
+                settings:
+                  trim_length: 40
+                  url_only: true
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -9
+          deb7da23-c274-40ed-a87d-111ef2c29d99:
+            uuid: deb7da23-c274-40ed-a87d-111ef2c29d99
+            region: top_left
+            configuration:
+              id: 'field_block:node:listing:field_serp'
+              label: Serp
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: basic_string
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -10
+          f48a5504-f0a1-4265-b711-3d54ccb876dd:
+            uuid: f48a5504-f0a1-4265-b711-3d54ccb876dd
+            region: top_left
+            configuration:
+              id: 'field_block:node:listing:field_logo'
+              label: 'logo url'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: link
+                settings:
+                  trim_length: 40
+                  url_only: true
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -6
+          3794c911-db76-4b25-a530-6827fb86925d:
+            uuid: 3794c911-db76-4b25-a530-6827fb86925d
+            region: top_right
+            configuration:
+              id: 'field_block:node:listing:field_adresse'
+              label: Adresse
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: address_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -8
+          c8a8107a-f3ff-4761-9d72-38a002107fcc:
+            uuid: c8a8107a-f3ff-4761-9d72-38a002107fcc
+            region: middle
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:listing:field_seitenabschnitt'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: -9
+          53b94181-c278-4312-bf5d-a9252d608657:
+            uuid: 53b94181-c278-4312-bf5d-a9252d608657
+            region: middle
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:listing:links'
+            additional: {  }
+            weight: -7
+          454c2771-8f18-44bd-9ff7-2b6357668ccb:
+            uuid: 454c2771-8f18-44bd-9ff7-2b6357668ccb
+            region: top_right
+            configuration:
+              id: 'field_block:node:listing:field_parentorganization'
+              label: parentOrganization
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -1
+          d79d24ac-aa75-416f-8f25-0badc4bcecbe:
+            uuid: d79d24ac-aa75-416f-8f25-0badc4bcecbe
+            region: top_right
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:listing:field_foundingdate'
+              formatter:
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: html_date
+                third_party_settings: {  }
+                type: datetime_default
+            additional: {  }
+            weight: -10
+          8c1c1172-a124-4149-b6ae-ed2135dece18:
+            uuid: 8c1c1172-a124-4149-b6ae-ed2135dece18
+            region: top_right
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:listing:field_alumni'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          f2596e2f-c933-4927-b617-c7765848f804:
+            uuid: f2596e2f-c933-4927-b617-c7765848f804
+            region: top_left
+            configuration:
+              id: 'field_block:node:listing:field_northdata'
+              label: northdata
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: link
+                settings:
+                  trim_length: 40
+                  url_only: true
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -7
+          3fbc35d2-2639-4832-bf0d-0d4a5414c8d9:
+            uuid: 3fbc35d2-2639-4832-bf0d-0d4a5414c8d9
+            region: middle
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:listing:search_api_excerpt'
+            additional: {  }
+            weight: -8
+          e0c20da1-d611-451d-a480-13d917c2dd5e:
+            uuid: e0c20da1-d611-451d-a480-13d917c2dd5e
+            region: top_left
+            configuration:
+              id: 'field_block:node:listing:field_leistungen'
+              label: Leistungen
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -8
+        third_party_settings: {  }
+id: node.listing.default
+targetEntityType: node
+bundle: listing
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_adresse:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_alumni:
+    weight: 19
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_e_mail:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_foundingdate:
+    weight: 7
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_geschaeftsfuehrer:
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_handelsregister:
+    weight: 16
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_legalname:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_leistungen:
+    weight: 21
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: top
+  field_logo:
+    weight: 9
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_northdata:
+    weight: 18
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_numberofemployees:
+    weight: 10
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_parentorganization:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_registergericht:
+    weight: 17
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_seitenabschnitt:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_serp:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_taxid:
+    weight: 12
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_telefon:
+    weight: 3
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_web_adresse:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

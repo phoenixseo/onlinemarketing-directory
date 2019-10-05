@@ -1,0 +1,20 @@
+uuid: c5eb7ed3-c33d-4787-b3e7-3254afc0f3d8
+langcode: de
+status: true
+dependencies:
+  theme:
+    - umami
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: umami_local_actions
+theme: umami
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primäre Verwaltungsaktionen'
+  provider: core
+  label_display: '0'
+visibility: {  }

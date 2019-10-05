@@ -1,0 +1,20 @@
+uuid: 54d589d4-f51a-452d-a0c5-cfcd5d5e9f5c
+langcode: de
+status: true
+dependencies:
+  theme:
+    - minimalplus
+_core:
+  default_config_hash: lOvyU_ml8FSX8wOz-3_qRReZty7m8HD2yV7CoJkOt5k
+id: minimalplus_page_title
+theme: minimalplus
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

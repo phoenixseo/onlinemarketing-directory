@@ -1,0 +1,24 @@
+uuid: 08723c33-f003-472b-af13-88ad3dcd7504
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.listing_kategorieseite_index
+  module:
+    - views
+  theme:
+    - umami
+id: umami_views_block__listing_kategorieseite_index_block_1
+theme: umami
+region: pre_header
+weight: 0
+provider: null
+plugin: 'views_block:listing_kategorieseite_index-block_1'
+settings:
+  id: 'views_block:listing_kategorieseite_index-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

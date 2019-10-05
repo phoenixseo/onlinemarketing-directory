@@ -1,0 +1,21 @@
+uuid: 646ad8ad-927d-4b1f-aa0e-6d80bd1c6705
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foundingdate
+    - node.type.listing
+  module:
+    - datetime
+id: node.listing.field_foundingdate
+field_name: field_foundingdate
+entity_type: node
+bundle: listing
+label: foundingDate
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

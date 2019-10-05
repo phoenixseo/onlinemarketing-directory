@@ -1,0 +1,22 @@
+uuid: 0238c7e1-da1f-49a4-a343-aaa1f99b6aac
+langcode: de
+status: true
+dependencies:
+  theme:
+    - umami
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: umami_local_tasks
+theme: umami
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Reiter
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

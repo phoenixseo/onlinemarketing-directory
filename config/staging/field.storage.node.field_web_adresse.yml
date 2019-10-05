@@ -1,0 +1,19 @@
+uuid: c366d327-7a9d-458e-ae37-f7ed0bf2da23
+langcode: de
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_web_adresse
+field_name: field_web_adresse
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

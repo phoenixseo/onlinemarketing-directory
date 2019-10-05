@@ -1,0 +1,20 @@
+uuid: b365ae7c-8d6a-47db-bce5-fcdb69ae2056
+langcode: de
+status: true
+dependencies:
+  theme:
+    - minimalplus
+_core:
+  default_config_hash: tEyL1iAZtYVhMVK0tvdrOoTEkBaKXJ4VvmwwvIX7csw
+id: minimalplus_local_actions
+theme: minimalplus
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

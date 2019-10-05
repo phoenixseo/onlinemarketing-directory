@@ -1,0 +1,61 @@
+uuid: 91b6d399-913e-4eda-8c36-6336ec124c83
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adresse
+    - node.type.listing_kategorieseite
+  module:
+    - address
+id: node.listing_kategorieseite.field_adresse
+field_name: field_adresse
+entity_type: node
+bundle: listing_kategorieseite
+label: Adresse
+description: 'Generische Adresse für die Suche nach weiteren Firmen innerhalb derselben Stadt'
+required: false
+translatable: true
+default_value:
+  -
+    langcode: ''
+    country_code: DE
+    administrative_area: null
+    locality: Lübeck
+    dependent_locality: null
+    postal_code: '23552'
+    sorting_code: null
+    address_line1: ''
+    address_line2: ''
+    organization: null
+    given_name: null
+    additional_name: null
+    family_name: null
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine1:
+      override: optional
+    addressLine2:
+      override: optional
+    postalCode:
+      override: optional
+    sortingCode:
+      override: optional
+    dependentLocality:
+      override: optional
+    locality:
+      override: optional
+    administrativeArea:
+      override: optional
+  fields: {  }
+field_type: address

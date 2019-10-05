@@ -1,0 +1,22 @@
+uuid: cdb6c424-0b1a-48dd-b084-71c5b763c243
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - minimalplus
+_core:
+  default_config_hash: RrYWweiD_R5MZejb4lt35qxDK28AKiuI_7gynOZqeYk
+id: minimalplus_powered
+theme: minimalplus
+region: footer_first
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

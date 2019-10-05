@@ -1,0 +1,22 @@
+uuid: 905633cd-c4b3-44b3-9a4c-a4dfeb4cb1db
+langcode: de
+status: true
+dependencies:
+  theme:
+    - minimalplus
+_core:
+  default_config_hash: 9YR-IruE4MqwJKFPKoLlK6wVf5s6VjkjB_uXKgk4PyA
+id: minimalplus_local_tasks
+theme: minimalplus
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

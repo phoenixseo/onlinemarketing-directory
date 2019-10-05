@@ -1,0 +1,40 @@
+uuid: 07d78db3-84b5-4050-bf77-91708c79808d
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.listing_kategorieseite.body
+    - node.type.listing_kategorieseite
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.listing_kategorieseite.search_index
+targetEntityType: node
+bundle: listing_kategorieseite
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

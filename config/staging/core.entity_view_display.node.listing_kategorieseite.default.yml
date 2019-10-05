@@ -1,0 +1,39 @@
+uuid: 62dc7df7-4dd7-425b-8684-47ab57b4c9ef
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.listing_kategorieseite.body
+    - field.field.node.listing_kategorieseite.field_adresse
+    - node.type.listing_kategorieseite
+  module:
+    - address
+    - text
+    - user
+id: node.listing_kategorieseite.default
+targetEntityType: node
+bundle: listing_kategorieseite
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_adresse:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

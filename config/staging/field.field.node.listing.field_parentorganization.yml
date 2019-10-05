@@ -1,0 +1,19 @@
+uuid: d823770f-5b3a-4b88-bf0b-e70a9e5aad38
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parentorganization
+    - node.type.listing
+id: node.listing.field_parentorganization
+field_name: field_parentorganization
+entity_type: node
+bundle: listing
+label: parentOrganization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

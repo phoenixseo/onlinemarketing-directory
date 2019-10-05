@@ -1,0 +1,11 @@
+uuid: 254a1e4e-02d7-45e3-ad07-cd92362db353
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.leistungen
+id: taxonomy_term.leistungen
+target_entity_type_id: taxonomy_term
+target_bundle: leistungen
+default_langcode: site_default
+language_alterable: false

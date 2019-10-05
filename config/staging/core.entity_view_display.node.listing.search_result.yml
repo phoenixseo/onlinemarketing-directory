@@ -1,0 +1,95 @@
+uuid: 5a372086-30dc-4ac3-9b07-9614eb580596
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.listing.body
+    - field.field.node.listing.field_adresse
+    - field.field.node.listing.field_alumni
+    - field.field.node.listing.field_e_mail
+    - field.field.node.listing.field_foundingdate
+    - field.field.node.listing.field_geschaeftsfuehrer
+    - field.field.node.listing.field_handelsregister
+    - field.field.node.listing.field_legalname
+    - field.field.node.listing.field_logo
+    - field.field.node.listing.field_northdata
+    - field.field.node.listing.field_numberofemployees
+    - field.field.node.listing.field_parentorganization
+    - field.field.node.listing.field_registergericht
+    - field.field.node.listing.field_seitenabschnitt
+    - field.field.node.listing.field_serp
+    - field.field.node.listing.field_taxid
+    - field.field.node.listing.field_telefon
+    - field.field.node.listing.field_web_adresse
+    - node.type.listing
+  module:
+    - address
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.listing.search_result
+targetEntityType: node
+bundle: listing
+mode: search_result
+content:
+  body:
+    type: text_trimmed
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_adresse:
+    type: address_plain
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_legalname:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_serp:
+    type: basic_string
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_alumni: true
+  field_e_mail: true
+  field_foundingdate: true
+  field_geschaeftsfuehrer: true
+  field_handelsregister: true
+  field_logo: true
+  field_northdata: true
+  field_numberofemployees: true
+  field_parentorganization: true
+  field_registergericht: true
+  field_seitenabschnitt: true
+  field_taxid: true
+  field_telefon: true
+  field_web_adresse: true
+  langcode: true

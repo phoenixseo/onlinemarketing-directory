@@ -1,0 +1,24 @@
+uuid: 0c93e33d-3fa8-46c6-a646-ff3c22b8e9ba
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.search_listing_locality
+  module:
+    - views
+  theme:
+    - minimalplus
+id: views_block__search_listing_locality_block_1
+theme: minimalplus
+region: content_bottom_first
+weight: 0
+provider: null
+plugin: 'views_block:search_listing_locality-block_1'
+settings:
+  id: 'views_block:search_listing_locality-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

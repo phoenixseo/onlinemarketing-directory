@@ -1,0 +1,19 @@
+uuid: 90f48064-7865-4bfe-8153-01f0ed88e407
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_registergericht
+    - node.type.listing
+id: node.listing.field_registergericht
+field_name: field_registergericht
+entity_type: node
+bundle: listing
+label: Registergericht
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: c20d2134-2d1b-4e94-b8d7-a0c0be27285f
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: Page
+type: page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

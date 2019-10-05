@@ -1,0 +1,9 @@
+uuid: 1fa699b2-632e-452c-878a-236ce90c47dc
+langcode: de
+status: true
+dependencies: {  }
+id: serp
+label: Serp
+icon_uuid: null
+description: 'Searchengine Result Page Text'
+behavior_plugins: {  }

@@ -1,0 +1,12 @@
+uuid: 3c7f5028-fda6-442d-9e79-75f4fe1f9e70
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__search_listings_similiar__block_1
+name: 'search_api:views_block__search_listings_similiar__block_1'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

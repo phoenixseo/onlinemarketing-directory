@@ -1,0 +1,21 @@
+uuid: 2ac23504-9bb5-414d-af25-538b22568ea6
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefon
+    - node.type.listing
+  module:
+    - telephone
+id: node.listing.field_telefon
+field_name: field_telefon
+entity_type: node
+bundle: listing
+label: Telefon
+description: Haupt-Rufnummer
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

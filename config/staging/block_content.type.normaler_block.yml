@@ -1,0 +1,8 @@
+uuid: e8bbe099-35a2-454e-874f-90882e476e89
+langcode: de
+status: true
+dependencies: {  }
+id: normaler_block
+label: 'Normaler Block'
+revision: 0
+description: ''

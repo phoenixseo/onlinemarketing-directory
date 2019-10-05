@@ -1,0 +1,100 @@
+uuid: 3cf1964e-a448-49c3-8a43-246bfe420acb
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adresse
+    - search_api.server.omd_database
+    - core.entity_view_mode.node.search_index
+  module:
+    - node
+    - search_api
+id: listing_index
+name: 'Listing Locality (Ort)'
+description: 'Listing Index. Für die Suche nach ähnlichen Listing-Einträgen, basierend z.B. auf der Adresse (Ort / Stadt)'
+read_only: false
+field_settings:
+  locality:
+    label: 'Adresse » Der Ort (d. h. die Stadt).'
+    datasource_id: 'entity:node'
+    property_path: 'field_adresse:locality'
+    type: text
+    boost: !!float 21
+    dependencies:
+      config:
+        - field.storage.node.field_adresse
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: text
+    dependencies:
+      module:
+        - node
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          listing: search_index
+  sticky:
+    label: 'Oben in Listen'
+    datasource_id: 'entity:node'
+    property_path: sticky
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - listing
+    languages:
+      default: false
+      selected:
+        - de
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  ignorecase:
+    all_fields: true
+    fields:
+      - locality
+      - nid
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+  transliteration:
+    all_fields: true
+    fields:
+      - locality
+      - nid
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: omd_database

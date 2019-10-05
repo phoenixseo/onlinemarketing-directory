@@ -1,0 +1,19 @@
+uuid: 8ed3f256-f4fb-4890-af44-56ddb1b3c4a4
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_handelsregister
+    - node.type.listing
+id: node.listing.field_handelsregister
+field_name: field_handelsregister
+entity_type: node
+bundle: listing
+label: Handelsregister
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

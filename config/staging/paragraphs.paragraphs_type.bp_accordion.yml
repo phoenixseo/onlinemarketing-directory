@@ -1,0 +1,11 @@
+uuid: 305c4255-8d3c-4941-a348-f7a9543cbd92
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3fqkZ6nl2nZ05a_fx_FGQq7QZxneM0Ux1-1GRnmKYak
+id: bp_accordion
+label: Akkordeon
+icon_uuid: null
+description: null
+behavior_plugins: {  }

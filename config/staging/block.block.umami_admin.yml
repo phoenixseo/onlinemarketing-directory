@@ -1,0 +1,27 @@
+uuid: 15616d5d-12e9-4b17-b9c5-4ebd2a4bd227
+langcode: de
+status: true
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - umami
+_core:
+  default_config_hash: OFEDxrButmQ8Vac1kiVr1gtw6vYKuSJPr9cJQZVKCKg
+id: umami_admin
+theme: umami
+region: pre_header
+weight: 1
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Verwaltung
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

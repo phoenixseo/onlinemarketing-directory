@@ -1,0 +1,29 @@
+uuid: e972f004-72c6-484b-a58f-6ce0027470ac
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leistungen
+    - node.type.listing
+    - taxonomy.vocabulary.leistungen
+id: node.listing.field_leistungen
+field_name: field_leistungen
+entity_type: node
+bundle: listing
+label: Leistungen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      leistungen: leistungen
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

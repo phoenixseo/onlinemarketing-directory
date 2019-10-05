@@ -1,0 +1,19 @@
+uuid: 21017c2f-fd14-4d17-9648-a005a50745e0
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geschaeftsfuehrer
+    - node.type.listing
+id: node.listing.field_geschaeftsfuehrer
+field_name: field_geschaeftsfuehrer
+entity_type: node
+bundle: listing
+label: Geschäftsführer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

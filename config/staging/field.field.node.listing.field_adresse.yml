@@ -1,0 +1,61 @@
+uuid: 685fc814-490b-4505-9cfe-91f40afd5bb8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adresse
+    - node.type.listing
+  module:
+    - address
+id: node.listing.field_adresse
+field_name: field_adresse
+entity_type: node
+bundle: listing
+label: Adresse
+description: 'Vollständige Anschrift mit qualifiziertem Firmennamen. Wenn ein Unternehmen Filialen hat, müssen diese als einzelne Listings mit ihrem jeweiligen Standort eingegeben werden.'
+required: false
+translatable: false
+default_value:
+  -
+    country_code: DE
+    langcode: ''
+    organization: ''
+    given_name: ''
+    family_name: ''
+    address_line1: ''
+    address_line2: ''
+    postal_code: ''
+    locality: ''
+    additional_name: null
+    sorting_code: null
+    dependent_locality: null
+    administrative_area: null
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: optional
+    additionalName:
+      override: optional
+    familyName:
+      override: optional
+    organization:
+      override: required
+    addressLine1:
+      override: required
+    addressLine2:
+      override: optional
+    postalCode:
+      override: required
+    sortingCode:
+      override: optional
+    dependentLocality:
+      override: optional
+    locality:
+      override: required
+    administrativeArea:
+      override: required
+  fields: {  }
+field_type: address

@@ -1,0 +1,19 @@
+uuid: bcfb7072-13b6-46e9-aa90-45371ff38823
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxid
+    - node.type.listing
+id: node.listing.field_taxid
+field_name: field_taxid
+entity_type: node
+bundle: listing
+label: taxID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

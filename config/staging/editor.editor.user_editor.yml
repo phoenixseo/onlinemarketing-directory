@@ -1,0 +1,51 @@
+uuid: 6724682a-7061-464e-b20f-acffa60b6997
+langcode: de
+status: true
+dependencies:
+  config:
+    - filter.format.user_editor
+  module:
+    - ckeditor
+format: user_editor
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatierung
+          items:
+            - Bold
+            - Italic
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Listen
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Medien
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: Werkzeuge
+          items:
+            - Source
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

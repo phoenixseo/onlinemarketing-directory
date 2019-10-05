@@ -1,0 +1,19 @@
+uuid: 3ca0aa6e-c2f0-4416-b402-27021881e505
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_serp
+    - node.type.listing
+id: node.listing.field_serp
+field_name: field_serp
+entity_type: node
+bundle: listing
+label: Serp
+description: 'Searchengine Result Page Text'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

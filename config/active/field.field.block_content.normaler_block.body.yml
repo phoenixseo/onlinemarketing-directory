@@ -1,0 +1,22 @@
+uuid: 3a9ac61d-b4de-4265-9a0c-da55d5a4f006
+langcode: de
+status: true
+dependencies:
+  config:
+    - block_content.type.normaler_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.normaler_block.body
+field_name: body
+entity_type: block_content
+bundle: normaler_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

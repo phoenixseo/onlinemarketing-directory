@@ -1,0 +1,22 @@
+uuid: d3044197-3131-4cbe-ae35-f107ba55aff3
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: listing_kategorieseite_url
+label: 'Listing Kategorieseite URL'
+type: 'canonical_entities:node'
+pattern: '/ort/[node:field_adresse:locality]/[node:title]'
+selection_criteria:
+  499fa24b-33e1-44e0-a98b-de9dedb98d66:
+    id: node_type
+    bundles:
+      listing_kategorieseite: listing_kategorieseite
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 499fa24b-33e1-44e0-a98b-de9dedb98d66
+selection_logic: and
+weight: -5
+relationships: {  }

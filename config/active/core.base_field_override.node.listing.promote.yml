@@ -1,0 +1,22 @@
+uuid: 11b6dafa-2f9e-4ab9-8367-fc3ee8379a30
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.listing
+id: node.listing.promote
+field_name: promote
+entity_type: node
+bundle: listing
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

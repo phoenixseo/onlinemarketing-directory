@@ -1,0 +1,22 @@
+uuid: 8944d34d-8575-4919-a100-02c8103e1030
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: listing_url
+label: 'Listing URL'
+type: 'canonical_entities:node'
+pattern: '/ort/[node:field_adresse:locality]/[node:title]'
+selection_criteria:
+  f64a9d9f-21e7-4735-b027-6e2f25952bc1:
+    id: node_type
+    bundles:
+      listing: listing
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f64a9d9f-21e7-4735-b027-6e2f25952bc1
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,19 @@
+uuid: c11eba43-b4bc-4b8c-b630-96e885473e87
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legalname
+    - node.type.listing
+id: node.listing.field_legalname
+field_name: field_legalname
+entity_type: node
+bundle: listing
+label: legalName
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

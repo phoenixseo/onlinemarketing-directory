@@ -1,0 +1,20 @@
+uuid: e88f4cae-84b5-412b-82a7-393ac1cb71b0
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - umami
+id: umami_pfadnavigation_2
+theme: umami
+region: pre_header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Pfadnavigation
+  provider: system
+  label_display: '0'
+visibility: {  }

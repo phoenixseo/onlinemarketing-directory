@@ -1,0 +1,23 @@
+uuid: 45472c81-7982-405c-9c8b-722e9d077636
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_logo
+    - node.type.listing
+  module:
+    - link
+id: node.listing.field_logo
+field_name: field_logo
+entity_type: node
+bundle: listing
+label: logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

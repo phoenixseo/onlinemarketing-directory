@@ -1,0 +1,23 @@
+uuid: 826a8aaa-24a6-49bd-85b6-c9bf0d9178a2
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - umami
+id: umami_brandingderwebsite
+theme: umami
+region: pre_header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding der Website'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
