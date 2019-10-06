@@ -133,20 +133,7 @@ display:
             label: ''
           plugin_id: search_api
       title: 'Search: Listing Locality ~~ {{ arguments.locality }}'
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: true
-          content:
-            value: "<br>locality: {{ locality }}\r\n<br>arguments.locality: {{ arguments.locality }}\r\n"
-            format: raw
-          plugin_id: text
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
