@@ -48,14 +48,11 @@ display:
         options:
           offset: 0
       style:
-        type: html_list
+        type: default
         options:
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
-          type: ol
-          wrapper_class: item-list
-          class: ''
       row:
         type: search_api
         options:

@@ -1,0 +1,8 @@
+uuid: 036b8ba1-9ad5-4d0e-b3ee-a32c9f09861e
+langcode: de
+status: true
+dependencies: {  }
+name: 'Admin Editor'
+format: admin_editor
+weight: 0
+filters: {  }
