@@ -1,0 +1,25 @@
+uuid: db05382f-4383-4f75-bfd7-a88a7ff6c193
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:normaler_block:bca2f408-0c10-42e2-a734-083cb0ccaf93'
+  module:
+    - block_content
+  theme:
+    - minimalplus
+id: omdjumbotron
+theme: minimalplus
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:bca2f408-0c10-42e2-a734-083cb0ccaf93'
+settings:
+  id: 'block_content:bca2f408-0c10-42e2-a734-083cb0ccaf93'
+  label: 'OMD Jumbotron'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

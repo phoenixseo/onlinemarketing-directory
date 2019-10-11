@@ -7,9 +7,13 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_e_mail
     - field.storage.node.field_foundingdate
+    - field.storage.node.field_geschaeftsfuehrer
     - field.storage.node.field_handelsregister
     - field.storage.node.field_legalname
+    - field.storage.node.field_leistungen
     - field.storage.node.field_logo
+    - field.storage.node.field_parentorganization
+    - field.storage.node.field_registergericht
     - field.storage.node.field_serp
     - field.storage.node.field_taxid
     - field.storage.node.field_telefon
@@ -18,6 +22,7 @@ dependencies:
     - core.entity_view_mode.node.search_index
   module:
     - node
+    - taxonomy
     - search_api
 id: listing_full_search
 name: 'Listing Full Search'
@@ -28,7 +33,8 @@ field_settings:
     label: 'Adresse » Die erste Zeile des Adressblocks.'
     datasource_id: 'entity:node'
     property_path: 'field_adresse:address_line1'
-    type: string
+    type: text
+    boost: !!float 3
     dependencies:
       config:
         - field.storage.node.field_adresse
@@ -48,14 +54,6 @@ field_settings:
     dependencies:
       module:
         - node
-  changed_1:
-    label: Geändert
-    datasource_id: 'entity:node'
-    property_path: changed
-    type: date
-    dependencies:
-      module:
-        - node
   country_code:
     label: 'Adresse » Das zweistellige Länderkürzel.'
     datasource_id: 'entity:node'
@@ -68,7 +66,7 @@ field_settings:
     label: E-Mail
     datasource_id: 'entity:node'
     property_path: field_e_mail
-    type: string
+    type: text
     dependencies:
       config:
         - field.storage.node.field_e_mail
@@ -80,11 +78,19 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_foundingdate
+  field_geschaeftsfuehrer:
+    label: Geschäftsführer
+    datasource_id: 'entity:node'
+    property_path: field_geschaeftsfuehrer
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_geschaeftsfuehrer
   field_handelsregister:
     label: Handelsregister
     datasource_id: 'entity:node'
     property_path: field_handelsregister
-    type: string
+    type: text
     dependencies:
       config:
         - field.storage.node.field_handelsregister
@@ -92,7 +98,7 @@ field_settings:
     label: legalName
     datasource_id: 'entity:node'
     property_path: field_legalname
-    type: string
+    type: text
     dependencies:
       config:
         - field.storage.node.field_legalname
@@ -104,6 +110,22 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_logo
+  field_parentorganization:
+    label: parentOrganization
+    datasource_id: 'entity:node'
+    property_path: field_parentorganization
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_parentorganization
+  field_registergericht:
+    label: Registergericht
+    datasource_id: 'entity:node'
+    property_path: field_registergericht
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_registergericht
   field_serp:
     label: Serp
     datasource_id: 'entity:node'
@@ -128,23 +150,7 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_telefon
-  field_telefon_1:
-    label: Telefon
-    datasource_id: 'entity:node'
-    property_path: field_telefon
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_telefon
   field_web_adresse:
-    label: 'Web Adresse'
-    datasource_id: 'entity:node'
-    property_path: field_web_adresse
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_web_adresse
-  field_web_adresse_1:
     label: 'Web Adresse'
     datasource_id: 'entity:node'
     property_path: field_web_adresse
@@ -172,19 +178,24 @@ field_settings:
     label: 'Adresse » Der Ort (d. h. die Stadt).'
     datasource_id: 'entity:node'
     property_path: 'field_adresse:locality'
-    type: string
+    type: text
+    boost: !!float 21
     dependencies:
       config:
         - field.storage.node.field_adresse
-  nid:
-    label: ID
+  name:
+    label: 'Leistungen » Taxonomy term » Name'
     datasource_id: 'entity:node'
-    property_path: nid
-    type: integer
+    property_path: 'field_leistungen:entity:name'
+    type: text
+    boost: !!float 13
     dependencies:
+      config:
+        - field.storage.node.field_leistungen
       module:
-        - node
-  nid_1:
+        - taxonomy
+        - taxonomy
+  nid:
     label: ID
     datasource_id: 'entity:node'
     property_path: nid
@@ -199,6 +210,15 @@ field_settings:
     indexed_locked: true
     type_locked: true
     hidden: true
+  postal_code:
+    label: 'Adresse » Die Postleitzahl.'
+    datasource_id: 'entity:node'
+    property_path: 'field_adresse:postal_code'
+    type: text
+    boost: !!float 13
+    dependencies:
+      config:
+        - field.storage.node.field_adresse
   rendered_item:
     label: 'Rendered HTML output'
     property_path: rendered_item
@@ -214,8 +234,6 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: status
     type: boolean
-    indexed_locked: true
-    type_locked: true
     dependencies:
       module:
         - node
@@ -224,6 +242,8 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: status
     type: boolean
+    indexed_locked: true
+    type_locked: true
     dependencies:
       module:
         - node
@@ -239,12 +259,12 @@ field_settings:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
-    type: string
+    type: text
     dependencies:
       module:
         - node
   uid:
-    label: null
+    label: uid
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
@@ -303,18 +323,21 @@ processor_settings:
       - body
       - country_code
       - field_e_mail
+      - field_geschaeftsfuehrer
       - field_handelsregister
       - field_legalname
       - field_logo
+      - field_parentorganization
+      - field_registergericht
       - field_serp
       - field_taxid
       - field_telefon
-      - field_telefon_1
       - field_web_adresse
-      - field_web_adresse_1
       - langcode
       - langcode_1
       - locality
+      - name
+      - postal_code
       - rendered_item
       - title
       - uuid
@@ -338,18 +361,21 @@ processor_settings:
       - body
       - country_code
       - field_e_mail
+      - field_geschaeftsfuehrer
       - field_handelsregister
       - field_legalname
       - field_logo
+      - field_parentorganization
+      - field_registergericht
       - field_serp
       - field_taxid
       - field_telefon
-      - field_telefon_1
       - field_web_adresse
-      - field_web_adresse_1
       - langcode
       - langcode_1
       - locality
+      - name
+      - postal_code
       - rendered_item
       - title
       - uuid
@@ -360,9 +386,17 @@ processor_settings:
   tokenizer:
     all_fields: true
     fields:
+      - address_line1
       - body
+      - field_e_mail
+      - field_handelsregister
+      - field_legalname
       - field_serp
+      - locality
+      - name
+      - postal_code
       - rendered_item
+      - title
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'
@@ -376,18 +410,21 @@ processor_settings:
       - body
       - country_code
       - field_e_mail
+      - field_geschaeftsfuehrer
       - field_handelsregister
       - field_legalname
       - field_logo
+      - field_parentorganization
+      - field_registergericht
       - field_serp
       - field_taxid
       - field_telefon
-      - field_telefon_1
       - field_web_adresse
-      - field_web_adresse_1
       - langcode
       - langcode_1
       - locality
+      - name
+      - postal_code
       - rendered_item
       - title
       - uuid

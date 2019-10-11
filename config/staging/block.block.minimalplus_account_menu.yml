@@ -12,7 +12,7 @@ _core:
   default_config_hash: lnWLgHvlQGcOxK6ZKWkdc2X3OGnkAwzvA3MieKjwGbM
 id: minimalplus_account_menu
 theme: minimalplus
-region: sidebar_first
+region: header_top_highlighted_second
 weight: -6
 provider: null
 plugin: 'system_menu_block:account'
