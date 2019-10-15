@@ -1,0 +1,25 @@
+uuid: 1510cbe1-98d5-4d1e-9801-d32c5cc77b18
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:normaler_block:40c2a57e-0de3-4621-8d00-7f0ce508f9b3'
+  module:
+    - block_content
+  theme:
+    - minimalplus
+id: omdnametop
+theme: minimalplus
+region: header_top_highlighted_first
+weight: -7
+provider: null
+plugin: 'block_content:40c2a57e-0de3-4621-8d00-7f0ce508f9b3'
+settings:
+  id: 'block_content:40c2a57e-0de3-4621-8d00-7f0ce508f9b3'
+  label: 'OMD Name Top'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
