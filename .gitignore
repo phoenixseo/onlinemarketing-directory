@@ -37,6 +37,7 @@
 /assets/db-dump/*
 /assets/images/*
 /assets/theme/*
+/assets/zerossl/*
 
 # Composer-Zeug: wird absichtlich eingecheckt, damit die Site via
 # "composer install" auf webserver nach vorgabe (composer.lock) gebaut wird.
