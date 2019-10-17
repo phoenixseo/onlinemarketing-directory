@@ -1,0 +1,23 @@
+uuid: 14770755-24b7-4c7a-b9d3-9f69a7eba0ed
+langcode: de
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: leistung_url_path
+label: 'Taxonomy: Leistung URL Path'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/leistung/[term:name]'
+selection_criteria:
+  4a5d943c-5ca2-4efe-b23b-48659b7c4684:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      leistungen: leistungen
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 4a5d943c-5ca2-4efe-b23b-48659b7c4684
+selection_logic: and
+weight: -5
+relationships: {  }
