@@ -1,0 +1,10 @@
+uuid: a8997bb1-c63a-4ef9-87a3-f5ccf6591559
+langcode: de
+status: true
+dependencies: {  }
+id: headlines
+label: Headlines
+font_url: 'local_fonts://montserrat_700_bold'
+fallback: ''
+selectors: '.fontyourface h1, .fontyourface h2, .fontyourface h3, .fontyourface h4, .fontyourface h5, .fontyourface h6'
+theme: minimalplus

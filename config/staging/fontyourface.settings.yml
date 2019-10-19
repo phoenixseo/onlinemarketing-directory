@@ -1,0 +1,7 @@
+enabled_fonts:
+  17: 'local_fonts://montserrat_400_regular'
+  18: 'local_fonts://montserrat_700_bold'
+load_all_enabled_fonts: 0
+_core:
+  default_config_hash: r8uAx4mTBwCkgDFbdKCmhjgbb91BQ4HbWSYRKrlowMY
+langcode: de

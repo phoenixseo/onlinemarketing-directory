@@ -1,0 +1,10 @@
+uuid: 8cd55096-a519-4633-887c-9ae5fa7d5dfe
+langcode: de
+status: true
+dependencies: {  }
+id: standard
+label: Standard
+font_url: 'local_fonts://montserrat_400_regular'
+fallback: ''
+selectors: '.fontyourface p, .fontyourface div'
+theme: minimalplus
